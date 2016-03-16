@@ -1,0 +1,33 @@
+{
+  "name": "gulp-styledocdown",
+  "version": "0.1.0",
+  "description": "A styledocdown plugin for Gulp",
+	"main": "index.js",
+	"scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "gulpplugin",
+		"styledocdown",
+		"styleguide",
+    "style guide",
+    "styledoc",
+    "style-doc",
+    "markdown"
+  ],
+  "license": "MIT",
+  "author": "Filip Mares <maresf@gmail.com> (https://github.com/etylsarin)",
+  "repository": "etylsarin/gulp-styledocdown",
+  "dependencies": {
+		"gulp-util": "^3.0.7",
+    "styledocdown": "^0.1.0",
+    "through2": "^2.0.1"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  }
+}
