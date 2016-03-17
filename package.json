@@ -20,6 +20,7 @@
   "repository": "etylsarin/gulp-styledocdown",
   "dependencies": {
 		"gulp-util": "^3.0.7",
+    "object-assign": "^4.0.1",
     "styledocdown": "^0.1.0",
     "through2": "^2.0.1"
   },
