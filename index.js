@@ -19,6 +19,7 @@ module.exports = function (options) {
 		}
 
 		defaults.root = path.dirname(file.path) + '/';
+		defaults.fileName = path.basename(file.path);
 		options = oAssign({}, defaults, options || {});
 
 		sdd(file.contents.toString(), options, function (err, data) {
