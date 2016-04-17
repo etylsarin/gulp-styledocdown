@@ -5,9 +5,12 @@ var path = require('path'),
 	sdd = require('styledocdown');
 
 module.exports = function (options) {
-	var defaults = {};
-
 	return through.obj(function (file, enc, cb) {
+		var cfg = {
+			root: path.dirname(file.path),
+			fileName: path.basename(file.path)
+		};
+
 		if (file.isNull()) {
 			cb(null, file);
 			return;
@@ -18,11 +21,11 @@ module.exports = function (options) {
 			return;
 		}
 
-		defaults.root = path.dirname(file.path) + '/';
-		defaults.fileName = path.basename(file.path);
-		options = oAssign({}, defaults, options || {});
+		if (typeof options === 'object') {
+			cfg = oAssign(cfg, options);
+		}
 
-		sdd(file.contents.toString(), options, function (err, data) {
+		sdd(file.contents.toString(), cfg, function (err, data) {
 			if (err) {
 				cb(new gutil.PluginError('gulp-styledocdown', err, {fileName: file.path}));
 				return;
