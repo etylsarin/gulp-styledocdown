@@ -21,7 +21,7 @@
   "dependencies": {
 		"gulp-util": "^3.0.7",
     "object-assign": "^4.0.1",
-    "styledocdown": "^0.1.4",
+    "styledocdown": "^0.1.5",
     "through2": "^2.0.1"
   },
   "devDependencies": {

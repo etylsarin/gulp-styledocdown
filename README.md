@@ -1,7 +1,7 @@
 # gulp-styledocdown
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
-> styledocdown plugin for [gulp](https://github.com/wearefractal/gulp)
+> [styledocdown](https://github.com/etylsarin/styledocdown) plugin for [gulp](https://github.com/wearefractal/gulp)
 
 ## Usage
 
