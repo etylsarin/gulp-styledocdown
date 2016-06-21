@@ -1,6 +1,6 @@
 {
   "name": "gulp-styledocdown",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A styledocdown plugin for Gulp",
 	"main": "index.js",
 	"scripts": {
